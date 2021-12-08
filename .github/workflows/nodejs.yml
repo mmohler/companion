@@ -103,7 +103,7 @@ jobs:
           yarn run macarmdist
 
           # verify that every module is runnable
-          node tools/verify-module-build.mjs "electron-output/mac/Companion.app/Contents/Resources/app.asar"
+          node tools/verify-module-build.mjs "electron-output/mac-arm64/Companion.app/Contents/Resources/app.asar"
         env:
           CI_BUILD_OS: osx
           CI_BUILD_ARCH: arm64
